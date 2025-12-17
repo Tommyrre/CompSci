@@ -1,0 +1,41 @@
+# CS 305 – Secure Software Development
+
+
+### Client Summary and Software Requirements
+
+Artemis Financial is a consulting company that develops personalized financial plans for its clients, including services related to savings, retirement, investments, and insurance. 
+The company wanted to modernize its web-based application while ensuring that sensitive customer financial data was properly protected. The primary issue Artemis Financial asked Global 
+Rain to address was identifying security vulnerabilities within their software and implementing secure coding practices to protect data integrity, confidentiality, and trust.
+
+### Strengths in Identifying Vulnerabilities and the Importance of Secure Coding
+
+One area I performed well in was systematically identifying software security vulnerabilities using industry-standard tools and best practices. Secure coding is essential because vulnerabilities
+can expose sensitive data, damage customer trust, and create legal and financial risks for a company. Software security adds value by protecting company assets, ensuring regulatory compliance, and 
+maintaining the organization’s reputation. Proactively addressing vulnerabilities reduces long-term costs and strengthens overall system reliability.
+
+### Challenging and Helpful Aspects of the Vulnerability Assessment
+
+The most challenging aspect of the vulnerability assessment was interpreting vulnerability reports and distinguishing true threats from false positives. However, this process was also one of the most
+valuable learning experiences. It strengthened my understanding of how vulnerabilities are categorized, prioritized, and mitigated, and it reinforced the importance of careful analysis rather than blindly 
+accepting automated scan results.
+
+### Increasing Layers of Security and Future Assessment Methods
+
+I increased layers of security by applying secure communication practices, using cryptographic hashing for data integrity, and refactoring code to follow secure development standards. In the future, I would
+continue using tools such as OWASP Dependency-Check, static code analysis tools, and secure code reviews to assess vulnerabilities. I would also rely on threat modeling and risk-based analysis to determine 
+which mitigation techniques provide the greatest security impact.
+
+### Ensuring Functionality and Security After Refactoring
+
+To ensure the application remained functional and secure after refactoring, I tested all application features to confirm expected behavior. I re-ran vulnerability scans and reviewed dependency reports to verify
+that no new security issues were introduced. This validation process ensured that security improvements did not compromise application functionality or stability.
+
+### Resources, Tools, and Practices for Future Use
+
+Throughout this project, I used tools and practices that will continue to be valuable in future assignments and professional work, including OWASP Dependency-Check, secure coding standards, cryptographic hashing
+techniques, and structured code reviews. These tools reinforced a DevSecOps mindset by integrating security throughout the development lifecycle rather than treating it as a final step.
+
+### Artifacts for Future Employers
+
+For future employers, I would showcase the completed Artemis Financial secure software report, along with supporting code examples and vulnerability assessment results. This assignment demonstrates my ability to
+assess real-world security risks, apply secure coding techniques, and validate software functionality—skills that are critical for modern software development roles.
