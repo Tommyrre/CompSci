@@ -1,0 +1,29 @@
+# CS 300 – Data Structures and Algorithms
+
+### What was the problem you were solving in the projects for this course?
+
+In this course, I was tasked with designing and implementing a system to manage and display Computer Science course data efficiently. The projects required storing course information, sorting courses alphanumerically, 
+and retrieving prerequisite data for individual courses. The primary challenge was determining which data structures best supported these operations while balancing runtime performance, memory usage, and maintainability. 
+Beyond producing functional code, I was required to analyze how different data structures impact efficiency and scalability.
+
+### How did you approach the problem? Consider why data structures are important to understand.
+
+I approached the problem by first reviewing the functional requirements and then evaluating multiple data structures—vectors, hash tables, and binary search trees—to determine their strengths and weaknesses for the given 
+use cases. Data structures are foundational because they directly influence algorithmic efficiency, data access speed, and overall system performance. By comparing insertion, search, and sorting behaviors, I was able to 
+make informed decisions rather than defaulting to a single structure. This ensured that my solutions were efficient and aligned with best practices in software design.
+
+### How did you overcome any roadblocks you encountered while going through the activities or project?
+
+One significant challenge was correctly handling prerequisite relationships while maintaining sorted output. I addressed this by breaking the problem into smaller, manageable steps and using pseudocode to outline logic 
+beforeimplementation. I also relied on structured testing and incremental debugging to validate data loading, sorting, and retrieval. Runtime analysis helped identify inefficiencies, allowing me to refine my approach 
+and improve program correctness and performance.
+
+### How has your work on this project expanded your approach to designing software and developing programs?
+
+This project strengthened my design-first mindset. I now place greater emphasis on analyzing requirements and selecting appropriate data structures before writing code. The experience reinforced the importance of scalability
+and efficiency, especially when working with growing datasets. These skills translate directly to real-world software development, where thoughtful design decisions reduce technical debt and improve long-term maintainability.
+
+### How has your work on this project evolved the way you write programs that are maintainable, readable, and adaptable?
+
+Through this course, I have improved how I structure and document my code. I consistently use clear naming conventions, modular functions, and logical separation of concerns. Evaluating multiple data structures also taught me
+how to adapt solutions when requirements change. As a result, my programs are easier to read, maintain, and extend—qualities that are essential for collaborative and professional software development.
