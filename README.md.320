@@ -1,0 +1,9 @@
+Reflection 320 Software Test, Automation QA
+
+I ensure my software is functional and secure by developing directly from documented requirements and validating each rule through automated unit tests. In the Contact Service project, 
+I implemented strict input validation (length limits, non-null checks, unique IDs) and tested both positive and boundary cases to ensure reliability.
+
+To interpret user needs, I translated written requirements into enforceable system constraints and map each requirement to test cases. This ensures traceability between stakeholder expectations and implemented functionality.
+
+My software design approach is modular and requirement-driven. I separate data models, service logic, and test cases to improve maintainability and scalability. Writing tests alongside implementation allows me to confirm 
+correctness early and build dependable, well-structured systems.
