@@ -1,0 +1,18 @@
+How do I approach designing software?
+
+I approach software design in a structured and intentional way. I begin by reviewing requirements, identifying core components, and planning how those components interact before writing code. 
+In this 3D scene project, that meant deciding object placement, scale, camera positioning, and lighting strategy before implementation. I followed an iterative milestone process—building the scene 
+step by step, refining spatial relationships, and improving realism through textures and lighting. This layered approach helps reduce errors and makes future adjustments easier. The same structured 
+design mindset can be applied to future software systems, data applications, and visualization tools.
+
+How do I approach developing programs?
+
+I develop programs incrementally and test functionality at each stage. In this project, I verified object rendering before adding textures and confirmed lighting calculations before refining placement. 
+Iteration played a major role; I frequently adjusted coordinates, scaling, and shader parameters to improve realism and performance. Throughout the milestones, my development approach evolved from focusing 
+on simply rendering objects to thinking more about modularity, performance, and maintainability. By the end of the project, I was developing with greater intention and structure.
+
+How can computer science and computational graphics help me reach my goals?
+
+Computer science strengthens my analytical thinking and technical problem-solving skills, both of which are essential for building efficient systems. Computational graphics and visualization expanded my 
+understanding of transformations, lighting models, and GPU interaction, while reinforcing strong C++ development practices. These skills enhance my educational growth by deepening my programming foundation 
+and support my professional goals by improving my ability to design structured, scalable, and visually meaningful technical solutions.
