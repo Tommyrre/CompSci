@@ -1,0 +1,18 @@
+How do you write programs that are maintainable, readable, and adaptable? Especially consider your work on the CRUD Python module from Project One, which you used to connect the dashboard widgets
+to the database in Project Two. What were the advantages of working in this way? How else could you use this CRUD Python module in the future?
+
+  In this project, I focused on building a dashboard connected to a MongoDB database using a reusable CRUD Python module. Keeping the database logic separate from the dashboard made the code easier
+to read, maintain, and update. If something changes, I only need to fix it in one place. The biggest advantage was reusability, since this same CRUD module can be used in future projects like dashboards or APIs.
+
+
+How do you approach a problem as a computer scientist? Consider how you approached the database or dashboard requirements that Grazioso Salvare requested. How did your approach to this project differ
+from previous assignments in other courses? What techniques or strategies would you use in the future to create databases to meet other client requests?
+
+  For this assignment, I approached it more like a real-world problem. I first looked at what Grazioso Salvare needed, then broke the project into steps—database setup, CRUD module, and dashboard integration. This
+was different from earlier assignments because I had to think more about the user and how the data would be used. Moving forward, I would continue using this step-by-step approach when building systems for clients.
+
+
+What do computer scientists do, and why does it matter? How would your work on this type of project help a company, like Grazioso Salvare, to do their work better?
+
+  Computer scientists build systems that turn data into something useful. In this case, the dashboard helps organize and filter data quickly, which allows a company like Grazioso Salvare to make faster and better 
+decisions. This project helped me bring together everything I’ve learned into one complete application that I can add to my portfolio.
