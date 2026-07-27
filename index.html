@@ -4,16 +4,197 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tommy Reid | CS 499 ePortfolio</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            background-color: #f4f6f8;
+            color: #1f2933;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #1f2933;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 5px;
+        }
+
+        nav {
+            background-color: #ffffff;
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #d9e2ec;
+        }
+
+        nav a {
+            margin: 0 12px;
+            color: #1f2933;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background-color: white;
+            margin-bottom: 25px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        .artifact {
+            border-left: 5px solid #526d82;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 10px;
+            margin-right: 10px;
+            padding: 10px 16px;
+            background-color: #1f2933;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .button:hover {
+            background-color: #334e68;
+        }
+
+        .status {
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1f2933;
+            color: white;
+        }
+    </style>
 </head>
+
 <body>
+
+<header>
     <h1>Tommy Reid</h1>
-    <h2>CS 499 Computer Science ePortfolio</h2>
+    <p>CS 499 Computer Science ePortfolio</p>
+</header>
 
-    <p>Welcome to my ePortfolio. This site showcases the projects, enhancements, and technical skills I developed throughout the Computer Science program at SNHU.</p>
+<nav>
+    <a href="#about">About Me</a>
+    <a href="#software">Software Design</a>
+    <a href="#algorithms">Algorithms</a>
+    <a href="#databases">Databases</a>
+</nav>
 
-    <h3>Featured Artifact</h3>
-    <ul>
-        <li>CS-340 Dashboard Enhancement</li>
-    </ul>
+<main>
+
+    <section id="about">
+        <h2>About Me</h2>
+
+        <p>
+            Welcome to my Computer Science ePortfolio. This site showcases the
+            projects, enhancements, and technical skills I developed throughout
+            the Computer Science program.
+        </p>
+
+        <p>
+            My career interests include software development, data analysis,
+            database management, and systems improvement. The artifacts included
+            in this portfolio demonstrate my progress in software design and
+            engineering, algorithms and data structures, and databases.
+        </p>
+    </section>
+
+    <section id="software" class="artifact">
+        <h2>Software Design and Engineering</h2>
+
+        <h3>CS 340 Animal Shelter Dashboard</h3>
+
+        <p>
+            For this enhancement, I converted the original Jupyter Notebook
+            dashboard into a modular Dash application. I separated configuration,
+            database access, business logic, layout components, and callback
+            functions into individual modules.
+        </p>
+
+        <p>
+            I also removed hard-coded credentials, added environment-based
+            configuration, improved logging and exception handling, and
+            reorganized the project into a more professional and maintainable
+            structure.
+        </p>
+
+        <p class="status">Status: Completed</p>
+    </section>
+
+    <section id="algorithms" class="artifact">
+        <h2>Algorithms and Data Structures</h2>
+
+        <h3>CS 340 Animal Shelter Dashboard</h3>
+
+        <p>
+            For this enhancement, I improved how the dashboard searches, filters,
+            sorts, processes, and displays animal shelter data. The application
+            now includes multi-field keyword searching, advanced filtering,
+            ascending and descending sorting, pagination, dynamic record counts,
+            and improved callback efficiency.
+        </p>
+
+        <p>
+            I also used reusable filtering functions, vectorized data processing,
+            stable sorting, caching, and efficient data structures to reduce
+            repeated work and improve application performance.
+        </p>
+
+        <a class="button"
+           href="https://github.com/Tommyrre/CS499_M3_Algorithms_Data_Structures"
+           target="_blank">
+            View Algorithms Repository
+        </a>
+
+        <p class="status">Status: Completed</p>
+    </section>
+
+    <section id="databases" class="artifact">
+        <h2>Databases</h2>
+
+        <h3>CS 340 Animal Shelter Dashboard</h3>
+
+        <p>
+            The database enhancement will focus on MongoDB schema validation,
+            indexing, query optimization, improved CRUD operations, aggregation
+            pipelines, database security, and performance.
+        </p>
+
+        <p class="status">Status: In Progress</p>
+    </section>
+
+</main>
+
+<footer>
+    <p>Tommy Reid | CS 499 Computer Science ePortfolio</p>
+</footer>
+
 </body>
 </html>
