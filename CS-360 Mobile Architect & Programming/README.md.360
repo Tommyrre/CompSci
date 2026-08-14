@@ -1,0 +1,33 @@
+# Warehouse Inventory Mobile Application
+
+## Project Summary
+
+This project was developed as part of CS 360: Mobile Architecture and Programming at Southern New Hampshire University. My goal was to create a mobile inventory application that would allow users to manage products directly from their phones instead of relying on paper logs or spreadsheets.
+
+The application allows users to create an account, log in, add inventory items, update records, remove products, and view inventory information in one place. I also included optional SMS notifications so users can receive alerts when inventory levels become low.
+
+## User-Centered Design
+
+When designing the application, I focused on creating an interface that was simple, organized, and easy to navigate. The app includes four main screens: Login, Inventory, Add Item, and Notifications.
+
+I wanted users to be able to move through the application quickly without unnecessary steps. Keeping the design clean and straightforward helped create a better user experience while still providing all of the required functionality.
+
+## Development Approach
+
+I approached development by building one feature at a time. I started with the user interface and gradually added the database, user authentication, inventory management features, and SMS functionality.
+
+Breaking the project into smaller tasks made development much more manageable and allowed me to test each feature individually before moving on to the next stage. This approach also made it easier to identify and troubleshoot issues during development.
+
+## Testing and Validation
+
+I used the Android Emulator throughout development to test the application's functionality. I verified that users could create accounts, log in successfully, perform all CRUD operations, and receive notifications when SMS permissions were granted.
+
+I also tested the application's behavior when SMS permissions were denied to ensure that the rest of the application continued to function properly. Testing played an important role in helping me identify and correct several issues before completing the project.
+
+## Challenges and Successes
+
+One of the biggest challenges I faced was connecting the user interface to a persistent SQLite database while ensuring that all features worked together correctly.
+
+I also had to correct several layout and input field issues during development. Looking back, I believe my biggest accomplishment was successfully implementing the database and CRUD functionality because it allowed me to combine multiple programming concepts into one working application.
+
+Overall, this project strengthened my skills in Android development, databases, testing, problem-solving, and user interface design.
