@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Tommy Reid | Computer Science ePortfolio</title>
 
     <style>
@@ -27,18 +27,14 @@
         }
 
         nav {
-            background-color: #ffffff;
+            background-color: white;
             padding: 15px;
             text-align: center;
             border-bottom: 1px solid #d9e2ec;
-            position: sticky;
-            top: 0;
-            z-index: 100;
         }
 
         nav a {
-            display: inline-block;
-            margin: 5px 10px;
+            margin: 0 10px;
             color: #1f2933;
             font-weight: bold;
             text-decoration: none;
@@ -60,10 +56,6 @@
             padding: 25px;
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-        }
-
-        h2 {
-            margin-top: 0;
         }
 
         .artifact {
@@ -106,239 +98,195 @@
 </header>
 
 <nav>
-    <a href="#self-assessment">Self-Assessment</a>
-    <a href="#code-review">Code Review</a>
+    <a href="#self">Self-Assessment</a>
+    <a href="#review">Code Review</a>
     <a href="#software">Software Design</a>
     <a href="#algorithms">Algorithms</a>
-    <a href="#databases">Databases</a>
-    <a href="#mobile">CS 360 Mobile</a>
-    <a href="#artifacts">Artifacts</a>
+    <a href="#database">Databases</a>
+    <a href="#mobile">CS-360</a>
+    <a href="#coursework">Coursework</a>
 </nav>
 
 <main>
 
-    <!-- PROFESSIONAL SELF-ASSESSMENT -->
-
-    <section id="self-assessment">
+    <section id="self">
         <h2>Professional Self-Assessment</h2>
 
         <p>
-            As I complete my Bachelor of Science in Computer Science with a
-            concentration in Data Analysis, this ePortfolio represents the
-            technical and professional growth I have achieved throughout the
-            program. My coursework strengthened my knowledge of software
-            development, databases, algorithms, data analysis, security,
-            mobile development, and full-stack application development.
+            As I complete my Bachelor of Science in Computer Science with a concentration in
+            Data Analysis, this ePortfolio represents both my academic and professional growth.
+            Throughout the program, I strengthened my skills in software development, databases,
+            algorithms, data analysis, security, systems analysis, and mobile application development.
         </p>
 
         <p>
-            My academic experience, combined with my professional experience
-            working with technical teams, business users, operations, project
-            managers, and leadership, has helped me become more confident in
-            communicating technical information, solving business problems,
+            My coursework, combined with my professional experience working with technical teams,
+            business users, operations, project managers, and leadership, has helped me become
+            more confident in communicating technical information, solving business problems,
             testing solutions, and developing applications that provide value.
         </p>
 
-        <p>
-            The artifacts included in this portfolio demonstrate my growth in
-            software design and engineering, algorithms and data structures,
-            database development, mobile application development, security,
-            and technical communication.
-        </p>
-
         <a class="button"
-           href="CS-499%20Capstone/Self-Assessment/Professional%20Self%20Assessment.docx">
+            href="CS-499%20Capstone/Self-Assessment/Professional%20Self%20Assessment.docx">
             View Professional Self-Assessment
         </a>
     </section>
 
-
-    <!-- CODE REVIEW -->
-
-    <section id="code-review">
-        <h2>CS 499 Code Review</h2>
+    <section id="review" class="artifact">
+        <h2>CS-499 Code Review</h2>
 
         <p>
-            My code review examines the original CS 340 Animal Shelter
-            Dashboard and identifies opportunities to improve the application's
-            architecture, efficiency, database implementation, security, and
-            maintainability.
-        </p>
-
-        <p>
-            The review provided the foundation for the three enhancements
-            completed throughout CS 499.
+            My code review evaluated the original CS-340 Animal Shelter Dashboard and identified
+            opportunities to improve the application's software architecture, algorithms, database
+            implementation, security, and maintainability.
         </p>
 
         <a class="button"
-           href="CS-499%20Capstone/Code%20Review/code%20rev1.mp4">
+            href="CS-499%20Capstone/Code%20Review/code%20rev1.mp4">
             Code Review Part 1
         </a>
 
         <a class="button"
-           href="CS-499%20Capstone/Code%20Review/code%20rev2.mp4">
+            href="CS-499%20Capstone/Code%20Review/code%20rev2.mp4">
             Code Review Part 2
         </a>
     </section>
 
-
-    <!-- SOFTWARE DESIGN -->
-
     <section id="software" class="artifact">
         <h2>Enhancement One: Software Design and Engineering</h2>
 
-        <h3>CS 340 Animal Shelter Dashboard</h3>
-
         <p>
-            For this enhancement, I converted the original Jupyter Notebook
-            dashboard into a modular Dash application. I separated configuration,
-            database access, business logic, layout components, and callback
-            functions into individual modules.
-        </p>
-
-        <p>
-            I also removed hard-coded credentials, added environment-based
-            configuration, improved logging and exception handling, and
-            reorganized the project into a cleaner and more maintainable
-            structure.
+            I transformed the original Jupyter Notebook into a modular Dash application by separating
+            configuration, database access, layouts, business logic, and callback functions into
+            individual modules.
         </p>
 
         <a class="button"
-           href="CS-499%20Capstone/Narratives/CS-499%20Milestone%20Two%20Narrative.docx">
-            View Software Design Narrative
+            href="CS-499%20Capstone/Narratives/CS-499%20Milestone%20Two%20Narrative.docx">
+            Software Design Narrative
         </a>
 
         <p class="status">Status: Completed</p>
     </section>
-
-
-    <!-- ALGORITHMS -->
 
     <section id="algorithms" class="artifact">
         <h2>Enhancement Two: Algorithms and Data Structures</h2>
 
-        <h3>CS 340 Animal Shelter Dashboard</h3>
-
         <p>
-            This enhancement improved how the dashboard searches, filters,
-            sorts, processes, and displays animal shelter data.
-        </p>
-
-        <p>
-            I implemented multi-field keyword searching, advanced filtering,
-            ascending and descending sorting, pagination, reusable filtering
-            functions, caching, improved record counting, and optimized callback
-            processing.
-        </p>
-
-        <p>
-            These changes reduced repeated processing and made the application
-            more responsive and easier to maintain.
+            This enhancement improved searching, filtering, sorting, caching, pagination,
+            callback processing, and overall application performance.
         </p>
 
         <a class="button"
-           href="CS-499%20Capstone/Narratives/CS%20499%20M3%20Narrative.docx">
-            View Algorithms Narrative
+            href="CS-499%20Capstone/Narratives/CS%20499%20M3%20Narrative.docx">
+            Algorithms Narrative
         </a>
 
         <p class="status">Status: Completed</p>
     </section>
 
-
-    <!-- DATABASE -->
-
-    <section id="databases" class="artifact">
+    <section id="database" class="artifact">
         <h2>Enhancement Three: Databases</h2>
 
-        <h3>CS 340 Animal Shelter Dashboard</h3>
-
         <p>
-            For my database enhancement, I strengthened the MongoDB
-            implementation by adding JSON Schema validation, improved CRUD
-            operations, database indexes, connection verification, aggregation
-            pipelines, application-level validation, duplicate protection, and
-            centralized error handling.
-        </p>
-
-        <p>
-            I also added safer query handling through approved fields and
-            operators. These improvements increased the reliability, security,
-            maintainability, and performance of the database layer.
+            I improved the MongoDB implementation by adding schema validation,
+            indexing, CRUD enhancements, aggregation pipelines, safer queries,
+            duplicate protection, and improved database security.
         </p>
 
         <a class="button"
-           href="CS-499%20Capstone/Narratives/M4-%20DB%20Narrative.docx">
-            View Database Narrative
+            href="CS-499%20Capstone/Narratives/M4-%20DB%20Narrative.docx">
+            Database Narrative
         </a>
 
         <p class="status">Status: Completed</p>
     </section>
 
-
-    <!-- FINAL CS499 ARTIFACTS -->
-
-    <section id="artifacts">
-        <h2>CS 499 Original and Enhanced Artifacts</h2>
-
-        <p>
-            The original CS 340 Animal Shelter Dashboard provides a baseline
-            for demonstrating my growth throughout the capstone. The final
-            enhanced application combines all three CS 499 enhancement
-            categories into one cumulative project.
-        </p>
+    <section class="artifact">
+        <h2>CS-499 Artifacts</h2>
 
         <a class="button"
-           href="CS-499%20Capstone/Artifacts/CS340%20original.zip">
-            Download Original Artifact
+            href="CS-499%20Capstone/Artifacts/CS340%20original.zip">
+            Original Artifact
         </a>
 
         <a class="button"
-           href="CS-499%20Capstone/Artifacts/499Final_dash.zip">
-            Download Final Enhanced Artifact
+            href="CS-499%20Capstone/Artifacts/499Final_dash.zip">
+            Final Enhanced Artifact
         </a>
     </section>
 
-
-    <!-- CS360 MOBILE -->
-
     <section id="mobile" class="artifact">
-        <h2>CS 360: Mobile Architecture and Programming</h2>
-
-        <h3>Warehouse Inventory Mobile Application</h3>
+        <h2>CS-360 Mobile Architecture & Programming</h2>
 
         <p>
-            The Warehouse Inventory application demonstrates my ability to
-            design, develop, test, and prepare an Android application for
-            deployment.
-        </p>
-
-        <p>
-            The application allows users to create an account, log in, add
-            inventory items, update records, delete products, and view inventory
-            information from a mobile device. A SQLite database provides
-            persistent data storage, and optional SMS notifications can alert
-            users when inventory levels become low.
-        </p>
-
-        <p>
-            This project strengthened my skills in Android development,
-            databases, user interface design, testing, permissions, debugging,
-            and mobile application deployment planning.
+            The Warehouse Inventory application demonstrates Android development,
+            SQLite integration, user authentication, CRUD operations, SMS notifications,
+            testing, and mobile application deployment planning.
         </p>
 
         <a class="button"
-           href="CS-360%20Mobile%20Architect%20%26%20Programming/TReid_WarehouseInventory.zip">
-            Download Mobile Application
+            href="CS-360%20Mobile%20Architect%20%26%20Programming/Artifact/TReid_WarehouseInventory.zip">
+            Mobile Application
         </a>
 
         <a class="button"
-           href="CS-360%20Mobile%20Architect%20%26%20Programming/Warehouse%20Inventory%20Mobile%20App%20Launch%20Plan.docx">
-            View Launch Plan
+            href="CS-360%20Mobile%20Architect%20%26%20Programming/Launch%20Plan/Warehouse%20Inventory%20Mobile%20App%20Launch%20Plan.docx">
+            Launch Plan
         </a>
 
         <a class="button"
-           href="CS-360%20Mobile%20Architect%20%26%20Programming/Mobile%20Architect%20Reflection.docx">
-            View Reflection
+            href="CS-360%20Mobile%20Architect%20%26%20Programming/Reflection/Mobile%20Architect%20Reflection.docx">
+            Reflection
+        </a>
+    </section>
+
+    <section id="coursework">
+        <h2>Additional Coursework</h2>
+
+        <a class="button"
+            href="CS-210%20Programming%20Languages%26%20OOP/CS-210%20Airgead%20Banking%20Pseudocode.docx">
+            CS-210
+        </a>
+
+        <a class="button"
+            href="CS-230%20Operating%20Platforms/CS-230%20The%20Gaming%20Room%20Software%20Design%20Template.docx">
+            CS-230
+        </a>
+
+        <a class="button"
+            href="CS-250%20SDLC/CS-250%20Sprint%20Review%20%26%20Retrospective.docx">
+            CS-250
+        </a>
+
+        <a class="button"
+            href="CS-255%20System%20Analysis%20%26%20Design/CS-255%20Business%20Requirements%20Document%20Template_reid%20(2).docx">
+            CS-255
+        </a>
+
+        <a class="button"
+            href="CS-305%20Software%20Security/CS-305%20Artemis%20Financial%20Vulnerability%20Assessment">
+            CS-305
+        </a>
+
+        <a class="button"
+            href="CS-320%20Software%20Test%20%26%20Automation%20QA/CS-320%20Grand%20Strand.zip">
+            CS-320
+        </a>
+
+        <a class="button"
+            href="CS-330%20Comp%20Graphics%20%26%20Visualization/CS-330%203D%20Scene.zip">
+            CS-330
+        </a>
+
+        <a class="button"
+            href="CS-340%20Client%20%26%20Server%20Development/CS-340%20Dashboard.ipynb">
+            CS-340
+        </a>
+
+        <a class="button"
+            href="CS-370%20Current%20Emerging%20CS%20Trends/CS-370%20TreasureHuntGame">
+            CS-370
         </a>
     </section>
 
@@ -349,4 +297,5 @@
 </footer>
 
 </body>
+
 </html>

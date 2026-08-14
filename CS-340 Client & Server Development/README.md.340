@@ -1,0 +1,99 @@
+# CS-340 Client & Server Development: Animal Shelter Dashboard
+
+## Project Overview
+
+The Animal Shelter Dashboard was developed as part of CS-340: Client and Server Development at Southern New Hampshire University. The purpose of this project was to build an interactive dashboard that connected a MongoDB database to a Python application using Dash and Plotly.
+
+The dashboard allows users to search, filter, and visualize animal shelter data while displaying the information in an organized and user-friendly format. This project focused on database connectivity, data retrieval, CRUD operations, data visualization, and dashboard development.
+
+---
+
+## Project Requirements
+
+The project was developed for Grazioso Salvare, a company that needed a way to quickly search and analyze animal shelter records to identify dogs that could be trained for search-and-rescue operations.
+
+The dashboard includes:
+
+- MongoDB database integration
+- Interactive data tables
+- Search and filtering functionality
+- Data visualization
+- Geographic mapping
+- CRUD operations
+- Dashboard widgets
+- Dynamic data updates
+
+---
+
+## Software Design and Development
+
+One of the most important design decisions I made was creating a reusable CRUD Python module that separated the database logic from the dashboard itself.
+
+Keeping the database functionality separate from the user interface made the code easier to read, maintain, test, and modify. If database changes are needed in the future, I only need to update the code in one location instead of making changes throughout the entire application.
+
+The biggest advantage of this approach was reusability. The same CRUD module could easily be used in future dashboards, web applications, reporting tools, or APIs.
+
+---
+
+## Problem-Solving Approach
+
+For this assignment, I approached the project as a real-world business problem instead of simply completing a programming assignment.
+
+I first identified Grazioso Salvare's requirements and then divided the project into smaller tasks:
+
+1. Database setup
+2. CRUD module development
+3. Dashboard integration
+4. Data visualization
+5. Testing and validation
+
+This approach was different from many previous assignments because I had to think about how users would interact with the data instead of focusing only on writing code.
+
+Moving forward, I plan to continue using this step-by-step development process when creating databases and applications for future clients.
+
+---
+
+## Why This Project Matters
+
+Computer scientists develop systems that transform data into useful information.
+
+In this project, the dashboard helps organize, filter, and display large amounts of data quickly, allowing users to make faster and more informed decisions.
+
+This project brought together many of the concepts I learned throughout the Computer Science program, including:
+
+- Python programming
+- MongoDB
+- CRUD operations
+- Client-server architecture
+- Dashboard development
+- Data visualization
+- Database design
+- Software engineering
+
+Because of this, the Animal Shelter Dashboard became the perfect artifact for my CS-499 capstone project and demonstrates my growth in software design, algorithms and data structures, and database development.
+
+---
+
+## Technologies Used
+
+- Python
+- MongoDB
+- PyMongo
+- Dash
+- Plotly
+- Pandas
+- Jupyter Notebook
+
+---
+
+## Skills Demonstrated
+
+- Database development
+- CRUD operations
+- Client-server development
+- Software engineering
+- Data structures and algorithms
+- Dashboard design
+- Data analysis
+- Data visualization
+- Technical documentation
