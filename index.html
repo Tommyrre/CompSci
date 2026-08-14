@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -53,7 +54,7 @@
 
         nav a {
             display: inline-block;
-            margin: 5px 9px;
+            margin: 5px 12px;
             color: #1f2933;
             font-weight: bold;
             text-decoration: none;
@@ -83,21 +84,8 @@
             margin-top: 0;
         }
 
-        section h3 {
-            color: #334e68;
-            margin-top: 25px;
-        }
-
         .intro {
             border-top: 6px solid #1f2933;
-        }
-
-        .artifact {
-            border-left: 5px solid #526d82;
-        }
-
-        .mobile {
-            border-left: 5px solid #7b8794;
         }
 
         .button {
@@ -117,27 +105,94 @@
             background-color: #334e68;
         }
 
-        .secondary-button {
+        .course-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 25px;
+        }
+
+        .course-btn {
+            width: 100%;
+            text-align: left;
+            padding: 15px 18px;
+            background-color: #1f2933;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        .course-btn:hover {
+            background-color: #334e68;
+        }
+
+        .course-btn.active {
             background-color: #526d82;
         }
 
-        .secondary-button:hover {
-            background-color: #486581;
+        .course-detail {
+            display: none;
+            margin-top: 2px;
+            margin-bottom: 10px;
+            padding: 28px;
+            background-color: #f8fafc;
+            border-left: 5px solid #526d82;
+            border-radius: 8px;
         }
 
-        .status {
-            font-weight: bold;
-            margin-top: 18px;
+        .course-detail.active {
+            display: block;
+        }
+
+        .course-detail h3 {
+            color: #1f2933;
+            margin-top: 0;
+            font-size: 1.35rem;
+        }
+
+        .course-detail h4 {
+            color: #334e68;
+            margin-top: 26px;
+            margin-bottom: 8px;
+            font-size: 1.05rem;
+        }
+
+        .skills {
+            padding-left: 28px;
         }
 
         .skills li {
             margin-bottom: 6px;
         }
 
-        .course-buttons {
+        .course-tabs {
             display: flex;
             flex-wrap: wrap;
-            gap: 5px;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .course-tabs a {
+            display: inline-block;
+            padding: 10px 16px;
+            background-color: #1f2933;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .course-tabs a:hover {
+            background-color: #334e68;
+        }
+
+        .subheading {
+            margin-top: 28px;
+            color: #334e68;
         }
 
         footer {
@@ -153,7 +208,6 @@
         }
 
         @media (max-width: 700px) {
-
             header h1 {
                 font-size: 1.9rem;
             }
@@ -171,92 +225,65 @@
                 padding: 20px;
             }
 
-            .button {
+            .button,
+            .course-tabs a {
                 display: block;
+                width: 100%;
                 text-align: center;
-                margin-right: 0;
             }
         }
     </style>
 </head>
 
-
 <body>
 
 <header>
-
     <h1>Tommyrre Reid</h1>
-
     <p>SNHU Computer Science ePortfolio</p>
-
-    <p>
-        Bachelor of Science in Computer Science |
-        Data Analysis Concentration
-    </p>
-
+    <p>Bachelor of Science in Computer Science | Data Analysis Concentration</p>
 </header>
 
-
 <nav>
-
-    <a href="#self">Self-Assessment</a>
-
-    <a href="#capstone">CS-499 Capstone</a>
-
-    <a href="#review">Code Review</a>
-
-    <a href="#software">Software Design</a>
-
-    <a href="#algorithms">Algorithms</a>
-
-    <a href="#database">Databases</a>
-
-    <a href="#mobile">CS-360 Mobile</a>
-
-    <a href="#coursework">Coursework</a>
-
+    <a href="#self">Professional Self-Assessment</a>
+    <a href="#coursework">Coursework Portfolio</a>
 </nav>
-
 
 <main>
 
-
     <!-- PROFESSIONAL SELF-ASSESSMENT -->
-    <!-- FIRST ITEM PRESENTED IN THE PORTFOLIO -->
 
     <section id="self" class="intro">
 
         <h2>Professional Self-Assessment</h2>
 
         <p>
-            Welcome to my Computer Science ePortfolio. As I complete my
-            Bachelor of Science in Computer Science with a concentration
-            in Data Analysis, this portfolio represents the technical
-            knowledge, professional skills, and growth I developed
-            throughout the program.
+            Welcome to my Computer Science ePortfolio. As I complete my Bachelor
+            of Science in Computer Science with a concentration in Data Analysis,
+            this portfolio represents the technical knowledge, professional skills,
+            and growth I developed throughout the program.
         </p>
 
         <p>
             My coursework strengthened my abilities in software development,
-            algorithms and data structures, database design, security,
-            systems analysis, mobile development, full-stack development,
-            data analysis, testing, and technical communication.
+            algorithms and data structures, database design, security, systems
+            analysis, mobile development, full-stack development, data analysis,
+            testing, and technical communication.
         </p>
 
         <p>
-            I have also been able to apply many of these skills in my
-            professional environment while collaborating with developers,
-            business users, operations teams, project managers, stakeholders,
-            and leadership. These experiences helped me better understand
-            how technology can be used to solve real business problems and
-            support organizational decision-making.
+            I have also been able to apply many of these skills in my professional
+            environment while collaborating with developers, business users,
+            operations teams, project managers, stakeholders, and leadership.
+            These experiences helped me better understand how technology can be
+            used to solve real business problems and support organizational
+            decision-making.
         </p>
 
         <p>
-            My Professional Self-Assessment provides a complete reflection
-            on my Computer Science program experience, the strengths I
-            developed, my professional goals, and how the work included
-            throughout this portfolio demonstrates my growth.
+            My Professional Self-Assessment provides a complete reflection on my
+            Computer Science program experience, the strengths I developed, my
+            professional goals, and how the work included throughout this portfolio
+            demonstrates my growth.
         </p>
 
         <a class="button"
@@ -267,317 +294,15 @@
     </section>
 
 
-
-    <!-- CS-499 CAPSTONE -->
-
-    <section id="capstone" class="artifact">
-
-        <h2>CS-499 Computer Science Capstone</h2>
-
-        <p>
-            My CS-499 capstone brings together the knowledge and skills I
-            developed throughout the Computer Science program. I selected my
-            original CS-340 Animal Shelter Dashboard as the foundation for
-            three cumulative enhancements.
-        </p>
-
-        <p>
-            The application was enhanced in Software Design and Engineering,
-            Algorithms and Data Structures, and Databases. Each enhancement
-            built on the previous milestone while preserving the existing
-            functionality of the application.
-        </p>
-
-        <p>
-            Together, these improvements demonstrate my ability to evaluate
-            existing software, identify areas for improvement, develop more
-            efficient solutions, strengthen database design and security,
-            and create applications that are easier to maintain and expand.
-        </p>
-
-
-        <h3>Original and Final Artifacts</h3>
-
-        <a class="button"
-           href="CS-499%20Capstone/Artifacts/CS340%20original.zip">
-            Original CS-340 Artifact
-        </a>
-
-        <a class="button"
-           href="CS-499%20Capstone/Artifacts/Final%20Dash.zip">
-            Final Enhanced Dashboard
-        </a>
-
-
-        <h3>Capstone Progress and Artifact Updates</h3>
-
-        <a class="button secondary-button"
-           href="CS-499%20Capstone/Artifacts/ePortfolio%20Artifact%20Update1.docx">
-            ePortfolio Artifact Update 1
-        </a>
-
-        <a class="button secondary-button"
-           href="CS-499%20Capstone/Artifacts/Career%20Choice%20%26%20Artifact%20Update2.docx">
-            Career Choice & Artifact Update 2
-        </a>
-
-        <a class="button secondary-button"
-           href="CS-499%20Capstone/Artifacts/CS%20Trends%20%26%20Artifact%20Update3.docx">
-            CS Trends & Artifact Update 3
-        </a>
-
-        <a class="button secondary-button"
-           href="CS-499%20Capstone/Artifacts/Emerging%20Technology%20%26%20Final%20Artifact%20Update4.docx">
-            Emerging Technology & Final Artifact Update 4
-        </a>
-
-    </section>
-
-
-
-    <!-- CODE REVIEW -->
-
-    <section id="review" class="artifact">
-
-        <h2>Informal Code Review</h2>
-
-        <p>
-            My CS-499 code review examines the original CS-340 Animal
-            Shelter Dashboard before the capstone enhancements were
-            implemented.
-        </p>
-
-        <p>
-            During the review, I evaluated the application's existing
-            functionality and identified opportunities to improve its
-            structure, maintainability, efficiency, database implementation,
-            security, documentation, and overall design.
-        </p>
-
-        <p>
-            The code review also explains the enhancements I planned across
-            Software Design and Engineering, Algorithms and Data Structures,
-            and Databases.
-        </p>
-
-        <a class="button"
-           href="CS-499%20Capstone/Code%20Review/code%20rev1.mp4">
-            Code Review Part 1
-        </a>
-
-        <a class="button"
-           href="CS-499%20Capstone/Code%20Review/code%20rev2.mp4">
-            Code Review Part 2
-        </a>
-
-    </section>
-
-
-
-    <!-- SOFTWARE DESIGN -->
-
-    <section id="software" class="artifact">
-
-        <h2>Enhancement One: Software Design and Engineering</h2>
-
-        <p>
-            My Software Design and Engineering enhancement focused on
-            improving the overall architecture of the CS-340 Animal Shelter
-            Dashboard.
-        </p>
-
-        <p>
-            I converted the original Jupyter Notebook into a modular Dash
-            application and separated configuration, repository access,
-            business logic, layouts, and callbacks into individual
-            components.
-        </p>
-
-        <p>
-            I also removed hard-coded credentials, added environment-based
-            configuration, improved logging and exception handling, added
-            validation, and reorganized the project into a cleaner structure.
-            These changes improved maintainability, readability, scalability,
-            and security.
-        </p>
-
-        <a class="button"
-           href="CS-499%20Capstone/Narratives/M3-Software%20Design%20%26%20engineering%20Narrative.docx">
-            Software Design & Engineering Narrative
-        </a>
-
-        <p class="status">
-            Status: Completed
-        </p>
-
-    </section>
-
-
-
-    <!-- ALGORITHMS -->
-
-    <section id="algorithms" class="artifact">
-
-        <h2>Enhancement Two: Algorithms and Data Structures</h2>
-
-        <p>
-            My Algorithms and Data Structures enhancement focused on
-            improving how data is searched, filtered, sorted, processed,
-            and displayed throughout the dashboard.
-        </p>
-
-        <p>
-            I implemented multi-field keyword searching, advanced filtering,
-            ascending and descending sorting, pagination, reusable filtering
-            functions, caching, record counting, and optimized callback
-            processing.
-        </p>
-
-        <p>
-            These enhancements improved application responsiveness while
-            demonstrating my ability to use algorithmic principles and
-            efficient data-processing techniques to improve an existing
-            software solution.
-        </p>
-
-        <a class="button"
-           href="CS-499%20Capstone/Narratives/M2-%20Algorithm%20%26%20Data%20structure%20Narrative.docx">
-            Algorithms & Data Structures Narrative
-        </a>
-
-        <p class="status">
-            Status: Completed
-        </p>
-
-    </section>
-
-
-
-    <!-- DATABASES -->
-
-    <section id="database" class="artifact">
-
-        <h2>Enhancement Three: Databases</h2>
-
-        <p>
-            My Database enhancement strengthened the MongoDB implementation
-            of the CS-340 Animal Shelter Dashboard.
-        </p>
-
-        <p>
-            I added MongoDB JSON Schema validation, enhanced CRUD operations,
-            connection verification, database indexing, duplicate-record
-            protection, aggregation pipelines, safer query handling,
-            application-level validation, and centralized database error
-            handling.
-        </p>
-
-        <p>
-            These improvements strengthened data integrity, reliability,
-            performance, maintainability, and security while preserving the
-            previous software design and algorithm enhancements.
-        </p>
-
-        <a class="button"
-           href="CS-499%20Capstone/Narratives/M4-%20Databases%20Narrative.docx">
-            Database Narrative
-        </a>
-
-        <p class="status">
-            Status: Completed
-        </p>
-
-    </section>
-
-
-
-    <!-- CS-360 MOBILE ARCHITECTURE -->
-
-    <section id="mobile" class="mobile">
-
-        <h2>CS-360 Mobile Architecture & Programming</h2>
-
-        <h3>Warehouse Inventory Mobile Application</h3>
-
-        <p>
-            My Warehouse Inventory Mobile Application demonstrates my
-            experience designing, developing, testing, and preparing an
-            Android mobile application for deployment.
-        </p>
-
-        <p>
-            The application provides users with a simple way to manage
-            inventory directly from a mobile device. Users can create an
-            account, log in, add inventory items, update existing records,
-            remove products, and view inventory information in one place.
-        </p>
-
-        <p>
-            The application also includes optional SMS notifications for
-            low inventory levels. If SMS permission is denied, the remaining
-            application functionality continues to work normally.
-        </p>
-
-
-        <h3>Skills Demonstrated</h3>
-
-        <ul class="skills">
-
-            <li>Android mobile application development</li>
-
-            <li>Java programming</li>
-
-            <li>SQLite database integration</li>
-
-            <li>User authentication</li>
-
-            <li>CRUD operations</li>
-
-            <li>SMS permissions and notifications</li>
-
-            <li>User interface design</li>
-
-            <li>Testing and debugging</li>
-
-            <li>Mobile application launch planning</li>
-
-        </ul>
-
-
-        <a class="button"
-           href="CS-360%20Mobile%20Architect%20%26%20Programming/TReid_WarehouseInventory.zip">
-            Warehouse Inventory Application
-        </a>
-
-        <a class="button"
-           href="CS-360%20Mobile%20Architect%20%26%20Programming/Warehouse%20Inventory%20Mobile%20App%20Launch%20Plan.docx">
-            Mobile App Launch Plan
-        </a>
-
-        <a class="button"
-           href="CS-360%20Mobile%20Architect%20%26%20Programming/Mobile%20Architect%20Reflection.docx">
-            Mobile Architecture Reflection
-        </a>
-
-        <a class="button secondary-button"
-           href="CS-360%20Mobile%20Architect%20%26%20Programming/README.md">
-            CS-360 Project README
-        </a>
-
-    </section>
-
-
-
-    <!-- OTHER COURSEWORK -->
+    <!-- COURSEWORK PORTFOLIO -->
 
     <section id="coursework">
 
         <h2>Computer Science Coursework Portfolio</h2>
 
         <p>
-            The coursework below demonstrates the range of technical
-            knowledge and experience I developed throughout the Computer
-            Science program.
+            The coursework below demonstrates the range of technical knowledge
+            and experience I developed throughout the Computer Science program.
         </p>
 
         <p>
@@ -588,90 +313,629 @@
             technologies.
         </p>
 
+        <p>
+            Select a course below to view a brief description, the skills
+            demonstrated, and the artifacts associated with that course.
+        </p>
 
-        <div class="course-buttons">
-
-
-            <a class="button"
-               href="CS-210%20Programming%20Languages%26%20OOP/README.md.210">
-                CS-210
-            </a>
+        <div class="course-list">
 
 
-            <a class="button"
-               href="CS-230%20Operating%20Platforms/README.md.230">
-                CS-230
-            </a>
+            <!-- CS-210 -->
+
+            <button class="course-btn"
+                    onclick="showCourse('cs210', this)">
+                CS-210 Programming Languages & OOP
+            </button>
+
+            <div id="cs210" class="course-detail">
+
+                <h3>CS-210 Programming Languages & OOP</h3>
+
+                <h4>Airgead Banking Application</h4>
+
+                <p>
+                    This course strengthened my understanding of programming
+                    fundamentals and object-oriented development. My Airgead
+                    Banking project demonstrates my ability to design a program,
+                    organize logic into reusable components, work with user input,
+                    and create a functional application based on business
+                    requirements.
+                </p>
+
+                <h4>Skills Demonstrated</h4>
+
+                <ul class="skills">
+                    <li>Object-oriented programming</li>
+                    <li>Program design</li>
+                    <li>Pseudocode development</li>
+                    <li>User input and validation</li>
+                    <li>Reusable code</li>
+                    <li>Problem-solving</li>
+                </ul>
+
+                <div class="course-tabs">
+                    <a href="README.md.210">Course README</a>
+                    <a href="CS-210%20Airgead%20Banking%20Investing.txt">Airgead Banking Project</a>
+                    <a href="CS-210%20Airgead%20Banking%20Pseudocode.docx">Pseudocode</a>
+                </div>
+
+            </div>
 
 
-            <a class="button"
-               href="CS-250%20SDLC/README.md.250">
-                CS-250
-            </a>
+            <!-- CS-230 -->
+
+            <button class="course-btn"
+                    onclick="showCourse('cs230', this)">
+                CS-230 Operating Platforms
+            </button>
+
+            <div id="cs230" class="course-detail">
+
+                <h3>CS-230 Operating Platforms</h3>
+
+                <h4>The Gaming Room Software Design</h4>
+
+                <p>
+                    This course focused on software architecture and designing
+                    applications that can operate across different platforms.
+                    The Gaming Room project required me to evaluate technical
+                    requirements and recommend an appropriate architecture,
+                    operating platform, storage solution, and deployment approach.
+                </p>
+
+                <h4>Skills Demonstrated</h4>
+
+                <ul class="skills">
+                    <li>Software architecture</li>
+                    <li>Operating platform analysis</li>
+                    <li>Technical requirements evaluation</li>
+                    <li>Client/server design</li>
+                    <li>Scalability considerations</li>
+                    <li>Technical documentation</li>
+                </ul>
+
+                <div class="course-tabs">
+                    <a href="README.md.230">Course README</a>
+                    <a href="CS-230%20The%20Gaming%20Room%20Software%20Design%20Template.docx">
+                        Software Design Document
+                    </a>
+                </div>
+
+            </div>
 
 
-            <a class="button"
-               href="CS-255%20System%20Analysis%20%26%20Design/README.md.255">
-                CS-255
-            </a>
+            <!-- CS-250 -->
+
+            <button class="course-btn"
+                    onclick="showCourse('cs250', this)">
+                CS-250 Software Development Lifecycle
+            </button>
+
+            <div id="cs250" class="course-detail">
+
+                <h3>CS-250 Software Development Lifecycle</h3>
+
+                <h4>Agile Development and Sprint Review</h4>
+
+                <p>
+                    This course introduced Agile development practices and the
+                    Scrum framework. My coursework demonstrates my understanding
+                    of sprint planning, changing requirements, team collaboration,
+                    retrospectives, and delivering software incrementally throughout
+                    the development lifecycle.
+                </p>
+
+                <h4>Skills Demonstrated</h4>
+
+                <ul class="skills">
+                    <li>Agile development</li>
+                    <li>Scrum practices</li>
+                    <li>Sprint planning</li>
+                    <li>Requirements management</li>
+                    <li>Team collaboration</li>
+                    <li>Retrospective analysis</li>
+                </ul>
+
+                <div class="course-tabs">
+                    <a href="README.md.250">Course README</a>
+                    <a href="CS-250%20Sprint%20Review%20%26%20Retrospective.docx">
+                        Sprint Review & Retrospective
+                    </a>
+                </div>
+
+            </div>
 
 
-            <a class="button"
-               href="CS-300%20DSA%20Analysis%20%26%20Design/README.md.300">
-                CS-300
-            </a>
+            <!-- CS-255 -->
+
+            <button class="course-btn"
+                    onclick="showCourse('cs255', this)">
+                CS-255 System Analysis & Design
+            </button>
+
+            <div id="cs255" class="course-detail">
+
+                <h3>CS-255 System Analysis & Design</h3>
+
+                <h4>Business Requirements and System Design</h4>
+
+                <p>
+                    This course focused on identifying business requirements,
+                    communicating with stakeholders, and translating those needs
+                    into technical system designs. My work demonstrates my ability
+                    to analyze requirements and document solutions clearly for
+                    both technical and nontechnical audiences.
+                </p>
+
+                <h4>Skills Demonstrated</h4>
+
+                <ul class="skills">
+                    <li>Requirements gathering</li>
+                    <li>Stakeholder communication</li>
+                    <li>System analysis</li>
+                    <li>System design</li>
+                    <li>Business process documentation</li>
+                    <li>Technical communication</li>
+                </ul>
+
+                <div class="course-tabs">
+                    <a href="README.md.255">Course README</a>
+                    <a href="CS-255%20Business%20Requirements%20Document%20Template_reid%20(2).docx">
+                        Business Requirements
+                    </a>
+                    <a href="CS-255%20System%20Design%20Document%20Template_reid%20(1).docx">
+                        System Design Document
+                    </a>
+                </div>
+
+            </div>
 
 
-            <a class="button"
-               href="CS-305%20Software%20Security/README.md.305">
-                CS-305
-            </a>
+            <!-- CS-300 -->
+
+            <button class="course-btn"
+                    onclick="showCourse('cs300', this)">
+                CS-300 DSA Analysis & Design
+            </button>
+
+            <div id="cs300" class="course-detail">
+
+                <h3>CS-300 DSA Analysis & Design</h3>
+
+                <h4>ABCU Course Planning Application</h4>
+
+                <p>
+                    This course strengthened my understanding of data structures
+                    and algorithms. My work required me to evaluate different data
+                    structures, compare runtime and memory trade-offs, and select
+                    appropriate methods for storing, searching, and processing data.
+                </p>
+
+                <h4>Skills Demonstrated</h4>
+
+                <ul class="skills">
+                    <li>Data structures</li>
+                    <li>Algorithm analysis</li>
+                    <li>Runtime analysis</li>
+                    <li>Memory analysis</li>
+                    <li>Searching and sorting</li>
+                    <li>Design trade-off evaluation</li>
+                </ul>
+
+                <div class="course-tabs">
+                    <a href="README.md.300">Course README</a>
+                    <a href="CS-300%20ABCU%20Coding%20(Project2)">ABCU Coding Project</a>
+                    <a href="CS-300%20Runtime%20%26%20Memory%20Analysis">
+                        Runtime & Memory Analysis
+                    </a>
+                </div>
+
+            </div>
 
 
-            <a class="button"
-               href="CS-320%20Software%20Test%20%26%20Automation%20QA/README.md.320">
-                CS-320
-            </a>
+            <!-- CS-305 -->
+
+            <button class="course-btn"
+                    onclick="showCourse('cs305', this)">
+                CS-305 Software Security
+            </button>
+
+            <div id="cs305" class="course-detail">
+
+                <h3>CS-305 Software Security</h3>
+
+                <h4>Artemis Financial Vulnerability Assessment</h4>
+
+                <p>
+                    This course strengthened my understanding of secure software
+                    development. I evaluated software for vulnerabilities,
+                    identified security risks, reviewed dependencies, and applied
+                    secure coding practices to help protect applications and data.
+                </p>
+
+                <h4>Skills Demonstrated</h4>
+
+                <ul class="skills">
+                    <li>Vulnerability assessment</li>
+                    <li>Secure coding practices</li>
+                    <li>Dependency analysis</li>
+                    <li>Risk identification</li>
+                    <li>Software security</li>
+                    <li>Security documentation</li>
+                </ul>
+
+                <div class="course-tabs">
+                    <a href="README.md.305">Course README</a>
+                    <a href="CS-305%20Artemis%20Financial%20Vulnerability%20Assessment">
+                        Vulnerability Assessment
+                    </a>
+                </div>
+
+            </div>
 
 
-            <a class="button"
-               href="CS-330%20Comp%20Graphics%20%26%20Visualization/README.md.330">
-                CS-330
-            </a>
+            <!-- CS-320 -->
+
+            <button class="course-btn"
+                    onclick="showCourse('cs320', this)">
+                CS-320 Software Test & Automation QA
+            </button>
+
+            <div id="cs320" class="course-detail">
+
+                <h3>CS-320 Software Test & Automation QA</h3>
+
+                <h4>Software Testing and Quality Assurance</h4>
+
+                <p>
+                    This course focused on developing reliable software through
+                    testing and quality assurance. My work demonstrates my ability
+                    to create tests, validate requirements, identify defects, and
+                    confirm that software behaves as expected.
+                </p>
+
+                <h4>Skills Demonstrated</h4>
+
+                <ul class="skills">
+                    <li>Software testing</li>
+                    <li>Automated testing</li>
+                    <li>Quality assurance</li>
+                    <li>Requirement validation</li>
+                    <li>Defect identification</li>
+                    <li>Test planning</li>
+                </ul>
+
+                <div class="course-tabs">
+                    <a href="README.md.320">Course README</a>
+                    <a href="CS-320%20Grand%20Strand.zip">Grand Strand Project</a>
+                    <a href="CS-320%20Summary%20%26%20Reflection">
+                        Summary & Reflection
+                    </a>
+                </div>
+
+            </div>
 
 
-            <a class="button"
-               href="CS-340%20Client%20%26%20Server%20Development/README.md.340">
-                CS-340
-            </a>
+            <!-- CS-330 -->
+
+            <button class="course-btn"
+                    onclick="showCourse('cs330', this)">
+                CS-330 Comp Graphics & Visualization
+            </button>
+
+            <div id="cs330" class="course-detail">
+
+                <h3>CS-330 Comp Graphics & Visualization</h3>
+
+                <h4>3D Scene Project</h4>
+
+                <p>
+                    This course focused on creating an interactive 3D environment
+                    using computational graphics techniques. My project demonstrates
+                    my ability to create and position 3D objects, apply textures
+                    and lighting, control the camera, and use transformations to
+                    build a complete visual scene.
+                </p>
+
+                <h4>Skills Demonstrated</h4>
+
+                <ul class="skills">
+                    <li>3D graphics development</li>
+                    <li>Object transformations</li>
+                    <li>Lighting and textures</li>
+                    <li>Camera controls</li>
+                    <li>Scene organization</li>
+                    <li>Visual problem-solving</li>
+                </ul>
+
+                <div class="course-tabs">
+                    <a href="README.md.330">Course README</a>
+                    <a href="CS-330%203D%20Scene.zip">3D Scene Project</a>
+                    <a href="CS-330%20Design%20Decisions%20Proposal">
+                        Design Decisions
+                    </a>
+                </div>
+
+            </div>
 
 
-            <a class="button"
-               href="CS-360%20Mobile%20Architect%20%26%20Programming/README.md">
-                CS-360
-            </a>
+            <!-- CS-340 -->
+
+            <button class="course-btn"
+                    onclick="showCourse('cs340', this)">
+                CS-340 Client & Server Development
+            </button>
+
+            <div id="cs340" class="course-detail">
+
+                <h3>CS-340 Client & Server Development</h3>
+
+                <h4>Animal Shelter Dashboard</h4>
+
+                <p>
+                    This course introduced client/server development using
+                    Python, Dash, and MongoDB. I developed an interactive
+                    Animal Shelter Dashboard that allows users to access,
+                    filter, and visualize shelter data. This project later
+                    became the foundation for my CS-499 capstone enhancements.
+                </p>
+
+                <h4>Skills Demonstrated</h4>
+
+                <ul class="skills">
+                    <li>Python development</li>
+                    <li>Dash application development</li>
+                    <li>MongoDB integration</li>
+                    <li>CRUD operations</li>
+                    <li>Data visualization</li>
+                    <li>Client/server architecture</li>
+                </ul>
+
+                <div class="course-tabs">
+                    <a href="README.md.340">Course README</a>
+                    <a href="CS-340%20Dashboard.ipynb">Animal Shelter Dashboard</a>
+                    <a href="CS-340%20Dashboard%20README.doc">
+                        Project Documentation
+                    </a>
+                </div>
+
+            </div>
 
 
-            <a class="button"
-               href="CS-370%20Current%20Emerging%20CS%20Trends/README.md.370">
-                CS-370
-            </a>
+            <!-- CS-360 -->
+
+            <button class="course-btn"
+                    onclick="showCourse('cs360', this)">
+                CS-360 Mobile Architect & Programming
+            </button>
+
+            <div id="cs360" class="course-detail">
+
+                <h3>CS-360 Mobile Architecture & Programming</h3>
+
+                <h4>Warehouse Inventory Mobile Application</h4>
+
+                <p>
+                    My Warehouse Inventory Mobile Application demonstrates
+                    my experience designing, developing, testing, and preparing
+                    an Android mobile application for deployment.
+                </p>
+
+                <p>
+                    The application allows users to create an account, log in,
+                    add inventory items, update existing records, remove products,
+                    and view inventory information in one place. It also includes
+                    optional SMS notifications for low inventory levels.
+                </p>
+
+                <h4>Skills Demonstrated</h4>
+
+                <ul class="skills">
+                    <li>Android mobile application development</li>
+                    <li>Java programming</li>
+                    <li>SQLite database integration</li>
+                    <li>User authentication</li>
+                    <li>CRUD operations</li>
+                    <li>SMS permissions and notifications</li>
+                    <li>User interface design</li>
+                    <li>Testing and debugging</li>
+                    <li>Mobile application launch planning</li>
+                </ul>
+
+                <div class="course-tabs">
+
+                    <a href="CS-360%20Mobile%20Architect%20%26%20Programming/README.md">
+                        CS-360 Project README
+                    </a>
+
+                    <a href="CS-360%20Mobile%20Architect%20%26%20Programming/TReid_WarehouseInventory.zip">
+                        Warehouse Inventory Application
+                    </a>
+
+                    <a href="CS-360%20Mobile%20Architect%20%26%20Programming/Warehouse%20Inventory%20Mobile%20App%20Launch%20Plan.docx">
+                        Mobile App Launch Plan
+                    </a>
+
+                    <a href="CS-360%20Mobile%20Architect%20%26%20Programming/Mobile%20Architect%20Reflection.docx">
+                        Mobile Architecture Reflection
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- CS-370 -->
+
+            <button class="course-btn"
+                    onclick="showCourse('cs370', this)">
+                CS-370 Current Emerging CS Trends
+            </button>
+
+            <div id="cs370" class="course-detail">
+
+                <h3>CS-370 Current Emerging CS Trends</h3>
+
+                <h4>Artificial Intelligence and Reinforcement Learning</h4>
+
+                <p>
+                    This course introduced emerging computer science concepts
+                    including artificial intelligence, neural networks, and
+                    reinforcement learning. My work demonstrates how intelligent
+                    systems can be designed to learn from their environment and
+                    solve problems through repeated decision-making.
+                </p>
+
+                <h4>Skills Demonstrated</h4>
+
+                <ul class="skills">
+                    <li>Artificial intelligence concepts</li>
+                    <li>Reinforcement learning</li>
+                    <li>Neural networks</li>
+                    <li>Machine learning problem-solving</li>
+                    <li>Algorithm evaluation</li>
+                    <li>Emerging technology analysis</li>
+                </ul>
+
+                <div class="course-tabs">
+                    <a href="README.md.370">Course README</a>
+                    <a href="CS-370%20TreasureHuntGame">Treasure Hunt Project</a>
+                </div>
+
+            </div>
+
+
+            <!-- CS-499 -->
+
+            <button class="course-btn"
+                    onclick="showCourse('cs499', this)">
+                CS-499 Capstone
+            </button>
+
+            <div id="cs499" class="course-detail">
+
+                <h3>CS-499 Capstone</h3>
+
+                <h4>CS-340 Animal Shelter Dashboard Enhancement</h4>
+
+                <p>
+                    My CS-499 capstone brings together the knowledge and skills
+                    I developed throughout the Computer Science program. I used
+                    my original CS-340 Animal Shelter Dashboard as the foundation
+                    for three cumulative enhancements in Software Design and
+                    Engineering, Algorithms and Data Structures, and Databases.
+                </p>
+
+                <p>
+                    The final project demonstrates my ability to evaluate existing
+                    software, improve application architecture and efficiency,
+                    strengthen database design and security, and communicate
+                    technical decisions through professional documentation and
+                    code review.
+                </p>
+
+                <h4>Skills Demonstrated</h4>
+
+                <ul class="skills">
+                    <li>Software design and engineering</li>
+                    <li>Modular application architecture</li>
+                    <li>Algorithms and data structures</li>
+                    <li>Searching, filtering, sorting, and caching</li>
+                    <li>MongoDB database development</li>
+                    <li>Schema validation and indexing</li>
+                    <li>CRUD operations</li>
+                    <li>Aggregation pipelines</li>
+                    <li>Secure configuration and query handling</li>
+                    <li>Code review and technical communication</li>
+                    <li>Testing, debugging, and application improvement</li>
+                </ul>
+
+
+                <h4 class="subheading">Code Review</h4>
+
+                <div class="course-tabs">
+
+                    <a href="CS-499%20Capstone/Code%20Review/code%20rev1.mp4">
+                        Code Review Part 1
+                    </a>
+
+                    <a href="CS-499%20Capstone/Code%20Review/code%20rev2.mp4">
+                        Code Review Part 2
+                    </a>
+
+                </div>
+
+
+                <h4 class="subheading">Original and Final Artifacts</h4>
+
+                <div class="course-tabs">
+
+                    <a href="CS-499%20Capstone/Artifacts/CS340%20original.zip">
+                        Original CS-340 Artifact
+                    </a>
+
+                    <a href="CS-499%20Capstone/Artifacts/Final%20Dash.zip">
+                        Final Enhanced Dashboard
+                    </a>
+
+                </div>
+
+
+                <h4 class="subheading">Enhancement Narratives</h4>
+
+                <div class="course-tabs">
+
+                    <a href="CS-499%20Capstone/Narratives/M3-Software%20Design%20%26%20engineering%20Narrative.docx">
+                        Software Design & Engineering Narrative
+                    </a>
+
+                    <a href="CS-499%20Capstone/Narratives/M2-%20Algorithm%20%26%20Data%20structure%20Narrative.docx">
+                        Algorithms & Data Structures Narrative
+                    </a>
+
+                    <a href="CS-499%20Capstone/Narratives/M4-%20Databases%20Narrative.docx">
+                        Database Narrative
+                    </a>
+
+                </div>
+
+
+                <h4 class="subheading">Capstone Progress and Artifact Updates</h4>
+
+                <div class="course-tabs">
+
+                    <a href="CS-499%20Capstone/Artifacts/ePortfolio%20Artifact%20Update1.docx">
+                        ePortfolio Artifact Update 1
+                    </a>
+
+                    <a href="CS-499%20Capstone/Artifacts/Career%20Choice%20%26%20Artifact%20Update2.docx">
+                        Career Choice & Artifact Update 2
+                    </a>
+
+                    <a href="CS-499%20Capstone/Artifacts/CS%20Trends%20%26%20Artifact%20Update3.docx">
+                        CS Trends & Artifact Update 3
+                    </a>
+
+                    <a href="CS-499%20Capstone/Artifacts/Emerging%20Technology%20%26%20Final%20Artifact%20Update4.docx">
+                        Emerging Technology & Final Artifact Update 4
+                    </a>
+
+                </div>
+
+            </div>
 
 
         </div>
 
     </section>
 
-
 </main>
-
 
 
 <footer>
 
-    <p>
-        <strong>Tommyrre Reid</strong>
-    </p>
+    <p><strong>Tommyrre Reid</strong></p>
 
     <p>
         SNHU Computer Science ePortfolio |
@@ -681,6 +945,47 @@
 </footer>
 
 
+<script>
+
+    function showCourse(courseId, button) {
+
+        const selectedCourse = document.getElementById(courseId);
+
+        const allCourseDetails =
+            document.querySelectorAll('.course-detail');
+
+        const allCourseButtons =
+            document.querySelectorAll('.course-btn');
+
+        if (!selectedCourse) {
+            return;
+        }
+
+        const isCurrentlyOpen =
+            selectedCourse.classList.contains('active');
+
+        allCourseDetails.forEach(function(detail) {
+            detail.classList.remove('active');
+        });
+
+        allCourseButtons.forEach(function(btn) {
+            btn.classList.remove('active');
+        });
+
+        if (!isCurrentlyOpen) {
+
+            selectedCourse.classList.add('active');
+
+            if (button) {
+                button.classList.add('active');
+            }
+        }
+    }
+
+</script>
+
+
 </body>
 
 </html>
+```
