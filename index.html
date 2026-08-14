@@ -4,315 +4,682 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Tommyrre Reid | SNHU Computer Science ePortfolio</title>
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             font-family: Arial, Helvetica, sans-serif;
             margin: 0;
             background-color: #f4f6f8;
             color: #1f2933;
-            line-height: 1.6;
+            line-height: 1.7;
         }
 
         header {
             background-color: #1f2933;
             color: white;
-            padding: 40px 20px;
+            padding: 55px 20px;
             text-align: center;
         }
 
         header h1 {
-            margin-bottom: 5px;
+            margin: 0 0 8px;
+            font-size: 2.4rem;
+        }
+
+        header p {
+            margin: 5px 0;
         }
 
         nav {
             background-color: white;
-            padding: 15px;
+            padding: 15px 10px;
             text-align: center;
             border-bottom: 1px solid #d9e2ec;
             position: sticky;
             top: 0;
             z-index: 100;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
         }
 
         nav a {
-            margin: 0 10px;
+            display: inline-block;
+            margin: 5px 9px;
             color: #1f2933;
             font-weight: bold;
             text-decoration: none;
         }
 
         nav a:hover {
+            color: #526d82;
             text-decoration: underline;
         }
 
         main {
-            max-width: 1000px;
+            max-width: 1050px;
             margin: 30px auto;
             padding: 0 20px;
         }
 
         section {
             background-color: white;
-            margin-bottom: 25px;
-            padding: 25px;
+            margin-bottom: 28px;
+            padding: 30px;
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+            scroll-margin-top: 90px;
+        }
+
+        section h2 {
+            margin-top: 0;
+        }
+
+        section h3 {
+            color: #334e68;
+            margin-top: 25px;
+        }
+
+        .intro {
+            border-top: 6px solid #1f2933;
         }
 
         .artifact {
             border-left: 5px solid #526d82;
         }
 
+        .mobile {
+            border-left: 5px solid #7b8794;
+        }
+
         .button {
             display: inline-block;
             margin-top: 10px;
             margin-right: 10px;
+            margin-bottom: 5px;
             padding: 10px 16px;
             background-color: #1f2933;
             color: white;
             text-decoration: none;
             border-radius: 6px;
+            font-weight: bold;
         }
 
         .button:hover {
             background-color: #334e68;
         }
 
+        .secondary-button {
+            background-color: #526d82;
+        }
+
+        .secondary-button:hover {
+            background-color: #486581;
+        }
+
         .status {
             font-weight: bold;
+            margin-top: 18px;
+        }
+
+        .skills li {
+            margin-bottom: 6px;
+        }
+
+        .course-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
         }
 
         footer {
             text-align: center;
-            padding: 20px;
+            padding: 25px;
             background-color: #1f2933;
             color: white;
+            margin-top: 35px;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+        @media (max-width: 700px) {
+
+            header h1 {
+                font-size: 1.9rem;
+            }
+
+            nav {
+                position: static;
+            }
+
+            nav a {
+                display: block;
+                margin: 8px;
+            }
+
+            section {
+                padding: 20px;
+            }
+
+            .button {
+                display: block;
+                text-align: center;
+                margin-right: 0;
+            }
         }
     </style>
 </head>
 
+
 <body>
 
 <header>
+
     <h1>Tommyrre Reid</h1>
-    <p>SNHU Computer Science ePortfolio | Data Analysis Concentration</p>
+
+    <p>SNHU Computer Science ePortfolio</p>
+
+    <p>
+        Bachelor of Science in Computer Science |
+        Data Analysis Concentration
+    </p>
+
 </header>
 
+
 <nav>
+
     <a href="#self">Self-Assessment</a>
+
+    <a href="#capstone">CS-499 Capstone</a>
+
     <a href="#review">Code Review</a>
+
     <a href="#software">Software Design</a>
+
     <a href="#algorithms">Algorithms</a>
+
     <a href="#database">Databases</a>
+
+    <a href="#mobile">CS-360 Mobile</a>
+
     <a href="#coursework">Coursework</a>
+
 </nav>
+
 
 <main>
 
-    <section id="self">
+
+    <!-- PROFESSIONAL SELF-ASSESSMENT -->
+    <!-- FIRST ITEM PRESENTED IN THE PORTFOLIO -->
+
+    <section id="self" class="intro">
 
         <h2>Professional Self-Assessment</h2>
 
         <p>
-            As I complete my Bachelor of Science in Computer Science with a
-            concentration in Data Analysis, this ePortfolio represents both my
-            academic and professional growth. Throughout the program, I strengthened
-            my skills in software development, databases, algorithms, data analysis,
-            security, systems analysis, mobile development, and full-stack application
-            development.
+            Welcome to my Computer Science ePortfolio. As I complete my
+            Bachelor of Science in Computer Science with a concentration
+            in Data Analysis, this portfolio represents the technical
+            knowledge, professional skills, and growth I developed
+            throughout the program.
         </p>
 
         <p>
-            My coursework, combined with my professional experience working with
-            technical teams, business users, operations, project managers, and
-            leadership, has helped me become more confident in communicating
-            technical information, solving business problems, testing solutions,
-            and developing applications that provide value.
+            My coursework strengthened my abilities in software development,
+            algorithms and data structures, database design, security,
+            systems analysis, mobile development, full-stack development,
+            data analysis, testing, and technical communication.
+        </p>
+
+        <p>
+            I have also been able to apply many of these skills in my
+            professional environment while collaborating with developers,
+            business users, operations teams, project managers, stakeholders,
+            and leadership. These experiences helped me better understand
+            how technology can be used to solve real business problems and
+            support organizational decision-making.
+        </p>
+
+        <p>
+            My Professional Self-Assessment provides a complete reflection
+            on my Computer Science program experience, the strengths I
+            developed, my professional goals, and how the work included
+            throughout this portfolio demonstrates my growth.
         </p>
 
         <a class="button"
-            href="CS-499%20Capstone/Self-Assessment/Professional%20Self%20Assessment.docx">
+           href="CS-499%20Capstone/Self-Assessment/Professional%20Self%20Assessment.docx">
             View Professional Self-Assessment
         </a>
 
     </section>
 
-    <section id="review" class="artifact">
 
-        <h2>CS-499 Code Review</h2>
+
+    <!-- CS-499 CAPSTONE -->
+
+    <section id="capstone" class="artifact">
+
+        <h2>CS-499 Computer Science Capstone</h2>
 
         <p>
-            My code review examined the original CS-340 Animal Shelter Dashboard
-            and identified opportunities to improve the application's architecture,
-            algorithms, database implementation, security, and maintainability.
+            My CS-499 capstone brings together the knowledge and skills I
+            developed throughout the Computer Science program. I selected my
+            original CS-340 Animal Shelter Dashboard as the foundation for
+            three cumulative enhancements.
+        </p>
+
+        <p>
+            The application was enhanced in Software Design and Engineering,
+            Algorithms and Data Structures, and Databases. Each enhancement
+            built on the previous milestone while preserving the existing
+            functionality of the application.
+        </p>
+
+        <p>
+            Together, these improvements demonstrate my ability to evaluate
+            existing software, identify areas for improvement, develop more
+            efficient solutions, strengthen database design and security,
+            and create applications that are easier to maintain and expand.
+        </p>
+
+
+        <h3>Original and Final Artifacts</h3>
+
+        <a class="button"
+           href="CS-499%20Capstone/Artifacts/CS340%20original.zip">
+            Original CS-340 Artifact
+        </a>
+
+        <a class="button"
+           href="CS-499%20Capstone/Artifacts/Final%20Dash.zip">
+            Final Enhanced Dashboard
+        </a>
+
+
+        <h3>Capstone Progress and Artifact Updates</h3>
+
+        <a class="button secondary-button"
+           href="CS-499%20Capstone/Artifacts/ePortfolio%20Artifact%20Update1.docx">
+            ePortfolio Artifact Update 1
+        </a>
+
+        <a class="button secondary-button"
+           href="CS-499%20Capstone/Artifacts/Career%20Choice%20%26%20Artifact%20Update2.docx">
+            Career Choice & Artifact Update 2
+        </a>
+
+        <a class="button secondary-button"
+           href="CS-499%20Capstone/Artifacts/CS%20Trends%20%26%20Artifact%20Update3.docx">
+            CS Trends & Artifact Update 3
+        </a>
+
+        <a class="button secondary-button"
+           href="CS-499%20Capstone/Artifacts/Emerging%20Technology%20%26%20Final%20Artifact%20Update4.docx">
+            Emerging Technology & Final Artifact Update 4
+        </a>
+
+    </section>
+
+
+
+    <!-- CODE REVIEW -->
+
+    <section id="review" class="artifact">
+
+        <h2>Informal Code Review</h2>
+
+        <p>
+            My CS-499 code review examines the original CS-340 Animal
+            Shelter Dashboard before the capstone enhancements were
+            implemented.
+        </p>
+
+        <p>
+            During the review, I evaluated the application's existing
+            functionality and identified opportunities to improve its
+            structure, maintainability, efficiency, database implementation,
+            security, documentation, and overall design.
+        </p>
+
+        <p>
+            The code review also explains the enhancements I planned across
+            Software Design and Engineering, Algorithms and Data Structures,
+            and Databases.
         </p>
 
         <a class="button"
-            href="CS-499%20Capstone/Code%20Review/code%20rev1.mp4">
+           href="CS-499%20Capstone/Code%20Review/code%20rev1.mp4">
             Code Review Part 1
         </a>
 
         <a class="button"
-            href="CS-499%20Capstone/Code%20Review/code%20rev2.mp4">
+           href="CS-499%20Capstone/Code%20Review/code%20rev2.mp4">
             Code Review Part 2
         </a>
 
     </section>
+
+
+
+    <!-- SOFTWARE DESIGN -->
 
     <section id="software" class="artifact">
 
         <h2>Enhancement One: Software Design and Engineering</h2>
 
         <p>
-            I transformed the original Jupyter Notebook into a modular Dash
-            application by separating configuration, database access, layouts,
-            business logic, and callback functions into individual modules.
+            My Software Design and Engineering enhancement focused on
+            improving the overall architecture of the CS-340 Animal Shelter
+            Dashboard.
+        </p>
+
+        <p>
+            I converted the original Jupyter Notebook into a modular Dash
+            application and separated configuration, repository access,
+            business logic, layouts, and callbacks into individual
+            components.
+        </p>
+
+        <p>
+            I also removed hard-coded credentials, added environment-based
+            configuration, improved logging and exception handling, added
+            validation, and reorganized the project into a cleaner structure.
+            These changes improved maintainability, readability, scalability,
+            and security.
         </p>
 
         <a class="button"
-            href="CS-499%20Capstone/Narratives/CS-499%20Milestone%20Two%20Narrative.docx">
-            Software Design Narrative
+           href="CS-499%20Capstone/Narratives/M3-Software%20Design%20%26%20engineering%20Narrative.docx">
+            Software Design & Engineering Narrative
         </a>
 
-        <p class="status">Status: Completed</p>
+        <p class="status">
+            Status: Completed
+        </p>
 
     </section>
+
+
+
+    <!-- ALGORITHMS -->
 
     <section id="algorithms" class="artifact">
 
         <h2>Enhancement Two: Algorithms and Data Structures</h2>
 
         <p>
-            This enhancement improved searching, filtering, sorting, caching,
-            pagination, callback processing, and overall application performance.
+            My Algorithms and Data Structures enhancement focused on
+            improving how data is searched, filtered, sorted, processed,
+            and displayed throughout the dashboard.
+        </p>
+
+        <p>
+            I implemented multi-field keyword searching, advanced filtering,
+            ascending and descending sorting, pagination, reusable filtering
+            functions, caching, record counting, and optimized callback
+            processing.
+        </p>
+
+        <p>
+            These enhancements improved application responsiveness while
+            demonstrating my ability to use algorithmic principles and
+            efficient data-processing techniques to improve an existing
+            software solution.
         </p>
 
         <a class="button"
-            href="CS-499%20Capstone/Narratives/CS%20499%20M3%20Narrative.docx">
-            Algorithms Narrative
+           href="CS-499%20Capstone/Narratives/M2-%20Algorithm%20%26%20Data%20structure%20Narrative.docx">
+            Algorithms & Data Structures Narrative
         </a>
 
-        <p class="status">Status: Completed</p>
+        <p class="status">
+            Status: Completed
+        </p>
 
     </section>
+
+
+
+    <!-- DATABASES -->
 
     <section id="database" class="artifact">
 
         <h2>Enhancement Three: Databases</h2>
 
         <p>
-            I improved the MongoDB implementation by adding schema validation,
-            indexing, CRUD enhancements, aggregation pipelines, safer queries,
-            duplicate protection, and improved database security.
+            My Database enhancement strengthened the MongoDB implementation
+            of the CS-340 Animal Shelter Dashboard.
+        </p>
+
+        <p>
+            I added MongoDB JSON Schema validation, enhanced CRUD operations,
+            connection verification, database indexing, duplicate-record
+            protection, aggregation pipelines, safer query handling,
+            application-level validation, and centralized database error
+            handling.
+        </p>
+
+        <p>
+            These improvements strengthened data integrity, reliability,
+            performance, maintainability, and security while preserving the
+            previous software design and algorithm enhancements.
         </p>
 
         <a class="button"
-            href="CS-499%20Capstone/Narratives/M4-%20DB%20Narrative.docx">
+           href="CS-499%20Capstone/Narratives/M4-%20Databases%20Narrative.docx">
             Database Narrative
         </a>
 
-        <p class="status">Status: Completed</p>
-
-    </section>
-
-    <section class="artifact">
-
-        <h2>CS-499 Artifacts</h2>
-
-        <p>
-            The original CS-340 Animal Shelter Dashboard serves as the foundation
-            for my capstone project. The enhanced artifact demonstrates cumulative
-            improvements in software design and engineering, algorithms and data
-            structures, and database development.
+        <p class="status">
+            Status: Completed
         </p>
 
+    </section>
+
+
+
+    <!-- CS-360 MOBILE ARCHITECTURE -->
+
+    <section id="mobile" class="mobile">
+
+        <h2>CS-360 Mobile Architecture & Programming</h2>
+
+        <h3>Warehouse Inventory Mobile Application</h3>
+
+        <p>
+            My Warehouse Inventory Mobile Application demonstrates my
+            experience designing, developing, testing, and preparing an
+            Android mobile application for deployment.
+        </p>
+
+        <p>
+            The application provides users with a simple way to manage
+            inventory directly from a mobile device. Users can create an
+            account, log in, add inventory items, update existing records,
+            remove products, and view inventory information in one place.
+        </p>
+
+        <p>
+            The application also includes optional SMS notifications for
+            low inventory levels. If SMS permission is denied, the remaining
+            application functionality continues to work normally.
+        </p>
+
+
+        <h3>Skills Demonstrated</h3>
+
+        <ul class="skills">
+
+            <li>Android mobile application development</li>
+
+            <li>Java programming</li>
+
+            <li>SQLite database integration</li>
+
+            <li>User authentication</li>
+
+            <li>CRUD operations</li>
+
+            <li>SMS permissions and notifications</li>
+
+            <li>User interface design</li>
+
+            <li>Testing and debugging</li>
+
+            <li>Mobile application launch planning</li>
+
+        </ul>
+
+
         <a class="button"
-            href="CS-499%20Capstone/Artifacts/CS340%20original.zip">
-            Original Artifact
+           href="CS-360%20Mobile%20Architect%20%26%20Programming/TReid_WarehouseInventory.zip">
+            Warehouse Inventory Application
         </a>
 
         <a class="button"
-            href="CS-499%20Capstone/Artifacts/Final%20Dash.zip">
-            Final Enhanced Artifact
+           href="CS-360%20Mobile%20Architect%20%26%20Programming/Warehouse%20Inventory%20Mobile%20App%20Launch%20Plan.docx">
+            Mobile App Launch Plan
+        </a>
+
+        <a class="button"
+           href="CS-360%20Mobile%20Architect%20%26%20Programming/Mobile%20Architect%20Reflection.docx">
+            Mobile Architecture Reflection
+        </a>
+
+        <a class="button secondary-button"
+           href="CS-360%20Mobile%20Architect%20%26%20Programming/README.md">
+            CS-360 Project README
         </a>
 
     </section>
+
+
+
+    <!-- OTHER COURSEWORK -->
 
     <section id="coursework">
 
-        <h2>Comp Sci Coursework Portfolio</h2>
+        <h2>Computer Science Coursework Portfolio</h2>
 
         <p>
-            The following coursework demonstrates my experience in programming,
-            object-oriented development, software design, databases, algorithms,
-            security, testing, graphics, mobile application development, and
-            emerging technologies.
+            The coursework below demonstrates the range of technical
+            knowledge and experience I developed throughout the Computer
+            Science program.
         </p>
 
-        <a class="button"
-            href="CS-210%20Programming%20Languages%26%20OOP/README.md.210">
-            CS-210
-        </a>
+        <p>
+            These projects include programming, object-oriented development,
+            software design, system analysis, algorithms and data structures,
+            databases, software security, testing and quality assurance,
+            graphics and visualization, mobile development, and emerging
+            technologies.
+        </p>
 
-        <a class="button"
-            href="CS-230%20Operating%20Platforms/README.md.230">
-            CS-230
-        </a>
 
-        <a class="button"
-            href="CS-250%20SDLC/README.md.250">
-            CS-250
-        </a>
+        <div class="course-buttons">
 
-        <a class="button"
-            href="CS-255%20System%20Analysis%20%26%20Design/README.md.255">
-            CS-255
-        </a>
 
-        <a class="button"
-            href="CS-300%20DSA%20Analysis%20%26%20Design/README.md.300">
-            CS-300
-        </a>
+            <a class="button"
+               href="CS-210%20Programming%20Languages%26%20OOP/README.md.210">
+                CS-210
+            </a>
 
-        <a class="button"
-            href="CS-305%20Software%20Security/README.md.305">
-            CS-305
-        </a>
 
-        <a class="button"
-            href="CS-320%20Software%20Test%20%26%20Automation%20QA/README.md.320">
-            CS-320
-        </a>
+            <a class="button"
+               href="CS-230%20Operating%20Platforms/README.md.230">
+                CS-230
+            </a>
 
-        <a class="button"
-            href="CS-330%20Comp%20Graphics%20%26%20Visualization/README.md.330">
-            CS-330
-        </a>
 
-        <a class="button"
-            href="CS-340%20Client%20%26%20Server%20Development/README.md.340">
-            CS-340
-        </a>
+            <a class="button"
+               href="CS-250%20SDLC/README.md.250">
+                CS-250
+            </a>
 
-        <a class="button"
-            href="CS-360%20Mobile%20Architect%20%26%20Programming/README.md.360">
-            CS-360
-        </a>
 
-        <a class="button"
-            href="CS-370%20Current%20Emerging%20CS%20Trends/README.md.370">
-            CS-370
-        </a>
+            <a class="button"
+               href="CS-255%20System%20Analysis%20%26%20Design/README.md.255">
+                CS-255
+            </a>
+
+
+            <a class="button"
+               href="CS-300%20DSA%20Analysis%20%26%20Design/README.md.300">
+                CS-300
+            </a>
+
+
+            <a class="button"
+               href="CS-305%20Software%20Security/README.md.305">
+                CS-305
+            </a>
+
+
+            <a class="button"
+               href="CS-320%20Software%20Test%20%26%20Automation%20QA/README.md.320">
+                CS-320
+            </a>
+
+
+            <a class="button"
+               href="CS-330%20Comp%20Graphics%20%26%20Visualization/README.md.330">
+                CS-330
+            </a>
+
+
+            <a class="button"
+               href="CS-340%20Client%20%26%20Server%20Development/README.md.340">
+                CS-340
+            </a>
+
+
+            <a class="button"
+               href="CS-360%20Mobile%20Architect%20%26%20Programming/README.md">
+                CS-360
+            </a>
+
+
+            <a class="button"
+               href="CS-370%20Current%20Emerging%20CS%20Trends/README.md.370">
+                CS-370
+            </a>
+
+
+        </div>
 
     </section>
 
+
 </main>
 
+
+
 <footer>
-    <p>Tommyrre Reid | SNHU Computer Science ePortfolio</p>
+
+    <p>
+        <strong>Tommyrre Reid</strong>
+    </p>
+
+    <p>
+        SNHU Computer Science ePortfolio |
+        Data Analysis Concentration
+    </p>
+
 </footer>
+
 
 </body>
 
