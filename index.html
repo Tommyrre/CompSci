@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tommy Reid | CS 499 ePortfolio</title>
+
+    <title>Tommy Reid | Computer Science ePortfolio</title>
 
     <style>
         body {
@@ -30,10 +31,14 @@
             padding: 15px;
             text-align: center;
             border-bottom: 1px solid #d9e2ec;
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
 
         nav a {
-            margin: 0 12px;
+            display: inline-block;
+            margin: 5px 10px;
             color: #1f2933;
             font-weight: bold;
             text-decoration: none;
@@ -97,37 +102,90 @@
 
 <header>
     <h1>Tommy Reid</h1>
-    <p>CS 499 Computer Science ePortfolio</p>
+    <p>Computer Science ePortfolio</p>
 </header>
 
 <nav>
-    <a href="#about">About Me</a>
+    <a href="#self-assessment">Self-Assessment</a>
+    <a href="#code-review">Code Review</a>
     <a href="#software">Software Design</a>
     <a href="#algorithms">Algorithms</a>
     <a href="#databases">Databases</a>
+    <a href="#mobile">CS 360 Mobile</a>
+    <a href="#artifacts">Artifacts</a>
 </nav>
 
 <main>
 
-    <section id="about">
-        <h2>About Me</h2>
+    <!-- PROFESSIONAL SELF-ASSESSMENT -->
+
+    <section id="self-assessment">
+        <h2>Professional Self-Assessment</h2>
 
         <p>
-            Welcome to my Computer Science ePortfolio. This site showcases the
-            projects, enhancements, and technical skills I developed throughout
-            the Computer Science program.
+            As I complete my Bachelor of Science in Computer Science with a
+            concentration in Data Analysis, this ePortfolio represents the
+            technical and professional growth I have achieved throughout the
+            program. My coursework strengthened my knowledge of software
+            development, databases, algorithms, data analysis, security,
+            mobile development, and full-stack application development.
         </p>
 
         <p>
-            My career interests include software development, data analysis,
-            database management, and systems improvement. The artifacts included
-            in this portfolio demonstrate my progress in software design and
-            engineering, algorithms and data structures, and databases.
+            My academic experience, combined with my professional experience
+            working with technical teams, business users, operations, project
+            managers, and leadership, has helped me become more confident in
+            communicating technical information, solving business problems,
+            testing solutions, and developing applications that provide value.
         </p>
+
+        <p>
+            The artifacts included in this portfolio demonstrate my growth in
+            software design and engineering, algorithms and data structures,
+            database development, mobile application development, security,
+            and technical communication.
+        </p>
+
+        <a class="button"
+           href="CS-499%20Capstone/Self-Assessment/Professional%20Self%20Assessment.docx">
+            View Professional Self-Assessment
+        </a>
     </section>
 
+
+    <!-- CODE REVIEW -->
+
+    <section id="code-review">
+        <h2>CS 499 Code Review</h2>
+
+        <p>
+            My code review examines the original CS 340 Animal Shelter
+            Dashboard and identifies opportunities to improve the application's
+            architecture, efficiency, database implementation, security, and
+            maintainability.
+        </p>
+
+        <p>
+            The review provided the foundation for the three enhancements
+            completed throughout CS 499.
+        </p>
+
+        <a class="button"
+           href="CS-499%20Capstone/Code%20Review/code%20rev1.mp4">
+            Code Review Part 1
+        </a>
+
+        <a class="button"
+           href="CS-499%20Capstone/Code%20Review/code%20rev2.mp4">
+            Code Review Part 2
+        </a>
+    </section>
+
+
+    <!-- SOFTWARE DESIGN -->
+
     <section id="software" class="artifact">
-        <h2>Software Design and Engineering</h2>
+        <h2>Enhancement One: Software Design and Engineering</h2>
 
         <h3>CS 340 Animal Shelter Dashboard</h3>
 
@@ -141,59 +199,153 @@
         <p>
             I also removed hard-coded credentials, added environment-based
             configuration, improved logging and exception handling, and
-            reorganized the project into a more professional and maintainable
+            reorganized the project into a cleaner and more maintainable
             structure.
         </p>
 
-        <p class="status">Status: Completed</p>
-    </section>
-
-    <section id="algorithms" class="artifact">
-        <h2>Algorithms and Data Structures</h2>
-
-        <h3>CS 340 Animal Shelter Dashboard</h3>
-
-        <p>
-            For this enhancement, I improved how the dashboard searches, filters,
-            sorts, processes, and displays animal shelter data. The application
-            now includes multi-field keyword searching, advanced filtering,
-            ascending and descending sorting, pagination, dynamic record counts,
-            and improved callback efficiency.
-        </p>
-
-        <p>
-            I also used reusable filtering functions, vectorized data processing,
-            stable sorting, caching, and efficient data structures to reduce
-            repeated work and improve application performance.
-        </p>
-
         <a class="button"
-           href="https://github.com/Tommyrre/CS499_M3_Algorithms_Data_Structures"
-           target="_blank">
-            View Algorithms Repository
+           href="CS-499%20Capstone/Narratives/CS-499%20Milestone%20Two%20Narrative.docx">
+            View Software Design Narrative
         </a>
 
         <p class="status">Status: Completed</p>
     </section>
 
-    <section id="databases" class="artifact">
-        <h2>Databases</h2>
+
+    <!-- ALGORITHMS -->
+
+    <section id="algorithms" class="artifact">
+        <h2>Enhancement Two: Algorithms and Data Structures</h2>
 
         <h3>CS 340 Animal Shelter Dashboard</h3>
 
         <p>
-            The database enhancement will focus on MongoDB schema validation,
-            indexing, query optimization, improved CRUD operations, aggregation
-            pipelines, database security, and performance.
+            This enhancement improved how the dashboard searches, filters,
+            sorts, processes, and displays animal shelter data.
         </p>
 
-        <p class="status">Status: In Progress</p>
+        <p>
+            I implemented multi-field keyword searching, advanced filtering,
+            ascending and descending sorting, pagination, reusable filtering
+            functions, caching, improved record counting, and optimized callback
+            processing.
+        </p>
+
+        <p>
+            These changes reduced repeated processing and made the application
+            more responsive and easier to maintain.
+        </p>
+
+        <a class="button"
+           href="CS-499%20Capstone/Narratives/CS%20499%20M3%20Narrative.docx">
+            View Algorithms Narrative
+        </a>
+
+        <p class="status">Status: Completed</p>
+    </section>
+
+
+    <!-- DATABASE -->
+
+    <section id="databases" class="artifact">
+        <h2>Enhancement Three: Databases</h2>
+
+        <h3>CS 340 Animal Shelter Dashboard</h3>
+
+        <p>
+            For my database enhancement, I strengthened the MongoDB
+            implementation by adding JSON Schema validation, improved CRUD
+            operations, database indexes, connection verification, aggregation
+            pipelines, application-level validation, duplicate protection, and
+            centralized error handling.
+        </p>
+
+        <p>
+            I also added safer query handling through approved fields and
+            operators. These improvements increased the reliability, security,
+            maintainability, and performance of the database layer.
+        </p>
+
+        <a class="button"
+           href="CS-499%20Capstone/Narratives/M4-%20DB%20Narrative.docx">
+            View Database Narrative
+        </a>
+
+        <p class="status">Status: Completed</p>
+    </section>
+
+
+    <!-- FINAL CS499 ARTIFACTS -->
+
+    <section id="artifacts">
+        <h2>CS 499 Original and Enhanced Artifacts</h2>
+
+        <p>
+            The original CS 340 Animal Shelter Dashboard provides a baseline
+            for demonstrating my growth throughout the capstone. The final
+            enhanced application combines all three CS 499 enhancement
+            categories into one cumulative project.
+        </p>
+
+        <a class="button"
+           href="CS-499%20Capstone/Artifacts/CS340%20original.zip">
+            Download Original Artifact
+        </a>
+
+        <a class="button"
+           href="CS-499%20Capstone/Artifacts/499Final_dash.zip">
+            Download Final Enhanced Artifact
+        </a>
+    </section>
+
+
+    <!-- CS360 MOBILE -->
+
+    <section id="mobile" class="artifact">
+        <h2>CS 360: Mobile Architecture and Programming</h2>
+
+        <h3>Warehouse Inventory Mobile Application</h3>
+
+        <p>
+            The Warehouse Inventory application demonstrates my ability to
+            design, develop, test, and prepare an Android application for
+            deployment.
+        </p>
+
+        <p>
+            The application allows users to create an account, log in, add
+            inventory items, update records, delete products, and view inventory
+            information from a mobile device. A SQLite database provides
+            persistent data storage, and optional SMS notifications can alert
+            users when inventory levels become low.
+        </p>
+
+        <p>
+            This project strengthened my skills in Android development,
+            databases, user interface design, testing, permissions, debugging,
+            and mobile application deployment planning.
+        </p>
+
+        <a class="button"
+           href="CS-360%20Mobile%20Architect%20%26%20Programming/TReid_WarehouseInventory.zip">
+            Download Mobile Application
+        </a>
+
+        <a class="button"
+           href="CS-360%20Mobile%20Architect%20%26%20Programming/Warehouse%20Inventory%20Mobile%20App%20Launch%20Plan.docx">
+            View Launch Plan
+        </a>
+
+        <a class="button"
+           href="CS-360%20Mobile%20Architect%20%26%20Programming/Mobile%20Architect%20Reflection.docx">
+            View Reflection
+        </a>
     </section>
 
 </main>
 
 <footer>
-    <p>Tommy Reid | CS 499 Computer Science ePortfolio</p>
+    <p>Tommy Reid | Computer Science ePortfolio</p>
 </footer>
 
 </body>
